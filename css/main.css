@@ -1,0 +1,49 @@
+/* Global Rules */
+:root {
+  --main-color: #ff305b;
+  --secondary-color: #555555;
+  --secondary-bg-color: #f1f1f1;
+  --black: #333;
+  --white: #fff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.container {
+}
+
+/* For a responsive website */
+
+/* Small */
+/* @media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+} */
+/* Medium */
+/* @media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+} */
+/* Large */
+/* @media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+} */
+
+/* end of responsive  */

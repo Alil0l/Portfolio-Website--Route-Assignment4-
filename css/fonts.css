@@ -1,0 +1,77 @@
+/* Roboto font Weights */
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto/Roboto-Black.ttf") format("truetype");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto/Roboto-Medium.ttf") format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto/Roboto-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto/Roboto-Thin.ttf") format("truetype");
+  font-weight: 200;
+}
+
+/* Source Sans 3 Weights */
+@font-face {
+  font-family: "SourceSans3";
+  src: url("/assets/fonts/Source_Sans_3/SourceSans3-Black.ttf")
+    format("truetype");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "SourceSans3";
+  src: url("/assets/fonts/Source_Sans_3/SourceSans3-ExtraBold.ttf")
+    format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "SourceSans3";
+  src: url("/assets/fonts/Source_Sans_3/SourceSans3-Bold.ttf")
+    format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "SourceSans3";
+  src: url("/assets/fonts/Source_Sans_3/SourceSans3-Medium.ttf")
+    format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "SourceSans3";
+  src: url("/assets/fonts/Source_Sans_3/SourceSans3-Regular.ttf")
+    format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "SourceSans3";
+  src: url("/assets/fonts/Source_Sans_3/SourceSans3-Light.ttf")
+    format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "SourceSans3";
+  src: url("/assets/fonts/Source_Sans_3/SourceSans3-ExtraLight.ttf")
+    format("truetype");
+  font-weight: 200;
+}
