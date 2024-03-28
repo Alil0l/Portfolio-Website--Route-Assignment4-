@@ -4,10 +4,100 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Say Hi | Responsive Personal Portfolio Project</title>
+    <!-- render all elemnts normaly -->
     <link rel="stylesheet" href="/css/normalize.css" />
+    <!-- Fonts Used -->
     <link rel="stylesheet" href="/css/fonts.css" />
-    <link rel="stylesheet" href="assets/fontawsomeicons/all.min.css" />
+    <!-- Font Awsome Icons -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Main Css File -->
     <link rel="stylesheet" href="/css/main.css" />
   </head>
-  <body></body>
+  <body>
+    <!--Start (Header & Nav bar) -->
+    <header>
+      <div class="container">
+        <nav>
+          <a href="#home" class="logo"> Ali </a>
+          <!-- <i class="fas fa-bars toggle-menu"></i> -->
+          <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#testimonial">Testimonial</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="clearfix"></div>
+        </nav>
+      </div>
+    </header>
+    <!--End of (Header & Nav bar) -->
+    <!-- Start landing section -->
+    <div class="landing">
+      <div class="container">
+        <div class="text-cont">
+          <h3>Hello I'm</h3>
+          <h1>Ali Mostafa</h1>
+          <h4 class="toggle-text">
+            Junior Web <span class="switch-text">Developer</span>
+          </h4>
+        </div>
+      </div>
+    </div>
+    <!-- End landing section -->
+    <!-- Start the about seciton -->
+    <div class="about" id="about">
+      <div class="container">
+        <div class="about-img">
+          <img src="assets/images/about.jpg" alt="Ali's photo" />
+        </div>
+        <div class="about-text">
+          <h2>Hello,</h2>
+          <p>
+            I am a passionate coder on a unique journey. While my formal
+            education led me through the civil engineering department at Cairo
+            University, my true passion lies in crafting digital experiences.
+            During my time there, I actively engaged in various student
+            activities, initially drawn to graphic design. As I collaborated
+            with talented peers, my interest expanded into the realms of mobile
+            development and user-centric design. My journey took a decisive turn
+            when my team conceptualized a mobile application. Curiosity drove me
+            to dive into the world of UI design and flutter development, and I
+            was captivated. Post-graduation, I pivoted...
+          </p>
+
+          <table>
+            <tbody>
+              <tr>
+                <td><span>Name:</span> Ali Mostafa</td>
+                <td><span>Job Title:</span> UI Developer</td>
+              </tr>
+              <tr>
+                <td><span>Age:</span> 25</td>
+                <td><span>Location:</span> Cairo, Egypt</td>
+              </tr>
+              <tr>
+                <td><span>Freelance:</span> Available</td>
+                <td>
+                  <span> E-mail:</span><a href="#"> aliwrker011@gmail.com</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="btn">
+            <a href="#" class="cv-btn"
+              >Download CV <i class="fa-solid fa-download"></i>
+            </a>
+            <a href="#" class="hire-btn"
+              >Hire Me <i class="fa-solid fa-paper-plane"></i
+            ></a>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+    <!-- end the about seciton -->
+  </body>
 </html>

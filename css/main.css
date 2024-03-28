@@ -6,25 +6,44 @@
   --black: #333;
   --white: #fff;
 }
-* {
-  margin: 0;
-  padding: 0;
+*,
+::before,
+::after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  transition: 0.5s;
 }
 html {
   scroll-behavior: smooth;
 }
 body {
   font-family: "Roboto", sans-serif;
+  height: 100vh;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 10px;
+  font-family: "Source Sans Pro", sans-serif;
 }
 a {
   text-decoration: none;
 }
 .container {
+  max-width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
+.clearfix {
+  clear: both;
+}
 /* For a responsive website */
 
 /* Small */
@@ -47,3 +66,207 @@ a {
 } */
 
 /* end of responsive  */
+/* ------------------------------------------ */
+
+/* Start styling header */
+/* Nav bar style */
+header {
+  width: 100%;
+  /* height: 100%; */
+  position: fixed;
+  z-index: 500;
+}
+
+header .logo {
+  color: var(--main-color);
+  font-weight: 800;
+  padding: 18px 0;
+  font-size: 24px;
+  float: left;
+}
+header nav {
+  position: relative;
+  z-index: 50;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+header nav ul {
+  padding: 5px 0;
+  float: right;
+  list-style: none;
+}
+header nav ul li {
+  display: inline-block;
+  text-align: center;
+}
+header nav li a {
+  color: white;
+  font-weight: 300;
+  font-size: 18px;
+  padding: 16px 12px;
+}
+header nav li a:hover,
+.active {
+  color: var(--main-color);
+  font-weight: 300;
+}
+/* End of header */
+/* ------------------------------------------ */
+
+/* start landing style */
+.landing {
+  height: 100%;
+  background-image: url(../assets/images/hero\ img.jpg);
+}
+.landing::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.landing .container {
+  display: table;
+  color: white;
+  text-align: center;
+  height: 100%;
+}
+.landing .text-cont {
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+}
+.landing .text-cont h3 {
+  font-weight: 600;
+  margin: 0 0 10px;
+  font-size: 24px;
+}
+.landing .text-cont h1 {
+  color: #ff305b;
+  font-size: 70px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.landing .text-cont h4 {
+  font-size: 26px;
+  font-weight: 200;
+  color: #fff;
+}
+.landing .text-cont h4 span {
+  position: relative;
+}
+.landing .text-cont h4 span::after {
+  content: "";
+  height: 30px;
+  border-left: 3px solid white;
+  position: absolute;
+  left: 120px;
+}
+
+/* end of landing style */
+/* ------------------------------------------ */
+
+/* Start about section style */
+.about {
+  margin: 40px auto;
+}
+.about .container {
+}
+.about .about-img {
+  position: relative;
+  float: left;
+  margin-left: 80px;
+  transform: translate(24px, 24px);
+}
+.about .about-img::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  border: 8px solid var(--black);
+  border-radius: 8px;
+  height: 100%;
+  width: 100%;
+  transform: translate(-24px, -24px);
+}
+.about .about-img img {
+  /* position: relative; */
+}
+.about .about-img:hover {
+  content: "";
+  position: absolute;
+  background-color: var(--main-color);
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+}
+.about .about-text {
+  margin-right: 80px;
+  float: right;
+  width: 50%;
+}
+.about-text h2 {
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  padding-left: 16px;
+  position: relative;
+  text-transform: uppercase;
+}
+.about-text h2::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  height: 60%;
+  border-left: 4px solid var(--main-color);
+  left: 0;
+}
+.about-text p {
+  border-bottom: 1px dashed var(--secondary-color);
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  color: var(--secondary-color);
+  line-height: 1.6;
+}
+.about-text table {
+  width: 100%;
+  margin: 24px;
+}
+.about-text tbody {
+}
+.about-text tr {
+}
+.about-text tr td {
+  padding-bottom: 16px;
+  width: 50%;
+  color: var(--secondary-color);
+}
+.about-text tr td span {
+  color: var(--black);
+  font-weight: 800;
+}
+.about-text tr td span a {
+  color: var(--secondary-color);
+  font-weight: 800;
+}
+
+.about-text .btn a {
+  color: var(--white);
+  background-color: var(--main-color);
+  padding: 12px 24px;
+  border-radius: 4px;
+  margin-inline: 20px;
+}
+.about-text .btn a:hover {
+  background-color: #fa2626;
+}
+.about-text .btn .cv-btn {
+}
+.about-text .btn .hire-btn {
+}
+
+/* end about section style */
+/* ------------------------------------------ */
