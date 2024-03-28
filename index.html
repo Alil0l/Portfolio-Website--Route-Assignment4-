@@ -16,8 +16,8 @@
   <body>
     <!--Start (Header & Nav bar) -->
     <header>
-      <div class="container">
-        <nav>
+      <nav>
+        <div class="container">
           <a href="#home" class="logo"> Ali </a>
           <!-- <i class="fas fa-bars toggle-menu"></i> -->
           <ul>
@@ -30,10 +30,11 @@
             <li><a href="#contact">Contact</a></li>
           </ul>
           <div class="clearfix"></div>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </header>
     <!--End of (Header & Nav bar) -->
+    <!-- ---------------------------------- -->
     <!-- Start landing section -->
     <div class="landing">
       <div class="container">
@@ -47,11 +48,20 @@
       </div>
     </div>
     <!-- End landing section -->
+    <!-- ---------------------------------- -->
     <!-- Start the about seciton -->
     <div class="about" id="about">
       <div class="container">
-        <div class="about-img">
-          <img src="assets/images/about.jpg" alt="Ali's photo" />
+        <div class="about-img-container">
+          <div class="about-img">
+            <div class="img-overlay">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-google"></i>
+              <i class="fa-brands fa-github"></i>
+            </div>
+            <img src="assets/images/about.jpg" alt="Ali's photo" />
+          </div>
         </div>
         <div class="about-text">
           <h2>Hello,</h2>
@@ -67,25 +77,17 @@
             to dive into the world of UI design and flutter development, and I
             was captivated. Post-graduation, I pivoted...
           </p>
-
-          <table>
-            <tbody>
-              <tr>
-                <td><span>Name:</span> Ali Mostafa</td>
-                <td><span>Job Title:</span> UI Developer</td>
-              </tr>
-              <tr>
-                <td><span>Age:</span> 25</td>
-                <td><span>Location:</span> Cairo, Egypt</td>
-              </tr>
-              <tr>
-                <td><span>Freelance:</span> Available</td>
-                <td>
-                  <span> E-mail:</span><a href="#"> aliwrker011@gmail.com</a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <ul>
+            <li class="left-li"><span>Name:</span> Ali Mostafa</li>
+            <li class="right-li"><span>Job Title:</span> UI Developer</li>
+            <li class="left-li"><span>Age:</span> 25</li>
+            <li class="right-li"><span>Location:</span> Cairo, Egypt</li>
+            <li class="left-li"><span>Freelance:</span> Available</li>
+            <li class="right-li">
+              <span> E-mail:</span><a href="#"> aliwrker011@gmail.com</a>
+            </li>
+            <div class="clearfix"></div>
+          </ul>
           <div class="btn">
             <a href="#" class="cv-btn"
               >Download CV <i class="fa-solid fa-download"></i>
@@ -99,5 +101,49 @@
       </div>
     </div>
     <!-- end the about seciton -->
+    <!-- ---------------------------------- -->
+    <!-- Start services section -->
+    <div class="services">
+      <div class="container">
+        <h2>Our Services</h2>
+        <div class="lines"></div>
+        <div class="items">
+          <div class="item">
+            <i class="fa-brands fa-figma"></i>
+            <h3>UI/UX DESIGN</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
+              consectetur! Debitis, consectetur. Laudantium, natus expedita.
+            </p>
+          </div>
+          <div class="item">
+            <i class="fa-solid fa-code"></i>
+            <h3>APP DEVELOPMENT</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
+              consectetur! Debitis, consectetur. Laudantium, natus expedita.
+            </p>
+          </div>
+          <div class="item">
+            <i class="fa-solid fa-pen-ruler"></i>
+            <h3>MOTION DESIGN</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
+              consectetur! Debitis, consectetur. Laudantium, natus expedita.
+            </p>
+          </div>
+          <div class="item">
+            <i class="fa-solid fa-pen-nib"></i>
+            <h3>GRAPHIC DESIGN</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
+              consectetur! Debitis, consectetur. Laudantium, natus expedita.
+            </p>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+    <!-- End services section -->
   </body>
 </html>
