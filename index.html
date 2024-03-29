@@ -36,7 +36,7 @@
     <!--End of (Header & Nav bar) -->
     <!-- ---------------------------------- -->
     <!-- Start landing section -->
-    <div class="landing">
+    <div class="landing" id="home">
       <div class="container">
         <div class="text-cont">
           <h3>Hello I'm</h3>
@@ -55,10 +55,10 @@
         <div class="about-img-container">
           <div class="about-img">
             <div class="img-overlay">
-              <i class="fa-brands fa-facebook-f"></i>
-              <i class="fa-brands fa-twitter"></i>
-              <i class="fa-brands fa-google"></i>
-              <i class="fa-brands fa-github"></i>
+              <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"> <i class="fa-brands fa-twitter"></i> </a>
+              <a href="#"> <i class="fa-brands fa-google"></i> </a>
+              <a href="#"> <i class="fa-brands fa-github"></i> </a>
             </div>
             <img src="assets/images/about.jpg" alt="Ali's photo" />
           </div>
@@ -285,9 +285,135 @@
 
     <!-- Start Blog section -->
     <div class="blog" id="blog">
-      <h2 class="sec-title">Our Blog</h2>
+      <div class="container">
+        <h2 class="sec-title">Our Blog</h2>
+        <div class="lines"></div>
+        <div class="blog-cards">
+          <div class="card">
+            <div class="card-img">
+              <img src="assets/images/blog/12.jpg" alt="" />
+            </div>
+            <div class="card-text">
+              <p>23 November, 2022</p>
+              <h2>Web design Blog Post</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
+                doloribus magni placeat ab temporibus eum officia, ullam laborum
+                cumque mollitia sit! Iste commodi et veniam provident eius error
+                ut sunt iusto, autem sint veritatis pariatur.
+              </p>
+              <a href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <iframe
+                src="https://www.youtube.com/embed/oePz2fHBn0E?si=v1gVxe0pnO9u3GpA"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="card-text">
+              <p>20 April, 2022</p>
+              <h2>Sultan-Hassan Mosque Story</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
+                doloribus magni placeat ab temporibus eum officia, ullam laborum
+                cumque mollitia sit! Iste commodi et veniam provident eius error
+                ut sunt iusto, autem sint veritatis pariatur.
+              </p>
+              <a href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="assets/images/blog/12.jpg" alt="" />
+            </div>
+            <div class="card-text">
+              <p>17 May, 2023</p>
+              <h2>Full Width Blog Post</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
+                doloribus magni placeat ab temporibus eum officia, ullam laborum
+                cumque mollitia sit! Iste commodi et veniam provident eius error
+                ut sunt iusto, autem sint veritatis pariatur.
+              </p>
+              <a href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- End Blog section -->
+    <!-- ---------------------------------- -->
+
+    <!-- Start Contact Section -->
+    <div class="contact" id="contact">
+      <div class="container">
+        <h2 class="sec-title">Contact Us</h2>
+        <div class="lines"></div>
+        <div class="form-container">
+          <form action="" required>
+            <div class="form-row">
+              <input
+                type="text"
+                name="name"
+                placeholder="Name"
+                class="form-name"
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                class="form-email"
+              />
+              <div class="clearfix"></div>
+            </div>
+            <div class="form-row">
+              <input
+                type="text"
+                name="subject"
+                placeholder="Subject"
+                class="form-subject"
+              />
+            </div>
+            <div class="form-row">
+              <textarea
+                name="message"
+                class="form-message"
+                cols="30"
+                rows="5"
+                placeholder="Your Message"
+              ></textarea>
+            </div>
+            <div class="form-row">
+              <button type="submit" class="form-submit">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- End Contact Section -->
+    <!-- ---------------------------------- -->
+
+    <!-- Start footer section -->
+    <div class="footer">
+      <div class="container">
+        <div class="social">
+          <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"> <i class="fa-brands fa-twitter"></i> </a>
+          <a href="#"> <i class="fa-brands fa-google"></i> </a>
+          <a href="#"> <i class="fa-brands fa-github"></i> </a>
+        </div>
+        <div class="copy-right">
+          Copy Right 2018 © By <a href="#">Theme-fair</a> All Rights Reserved
+        </div>
+      </div>
+    </div>
+    <!-- End of footer section -->
     <!-- ---------------------------------- -->
   </body>
 </html>

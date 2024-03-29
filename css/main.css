@@ -46,6 +46,11 @@ a {
 .clearfix {
   clear: both;
 }
+.sec-title {
+  font-size: 40px;
+  color: var(--black);
+  font-weight: 600;
+}
 /* For a responsive website */
 
 /* Small */
@@ -219,6 +224,9 @@ header nav li a:hover,
   transition-timing-function: ease;
   transform: scaleY(0.1);
 }
+.about-img .img-overlay a {
+  color: var(--white);
+}
 .about .about-img:hover .img-overlay {
   top: -0.5%;
   opacity: 0.6;
@@ -337,10 +345,7 @@ header nav li a:hover,
   padding: 60px 0;
   background-color: var(--secondary-bg-color);
 }
-.services h2 {
-  font-size: 40px;
-  color: var(--black);
-}
+
 .services .items {
   margin: auto;
   padding: 20px 0;
@@ -363,11 +368,7 @@ header nav li a:hover,
   color: var(--main-color);
   margin: 24px;
 }
-.sec-title {
-  font-size: 24px;
-  color: var(--black);
-  font-weight: 600;
-}
+
 .services .items .item p {
   padding: 0 8px;
   font-size: 16px;
@@ -489,6 +490,8 @@ header nav li a:hover,
     rgba(241, 241, 241, 1) 20%
   );
   padding: 50px;
+  border-radius: 8px;
+  overflow: hidden;
 }
 .testimonial-card-img {
   float: left;
@@ -538,4 +541,155 @@ header nav li a:hover,
   background-color: var(--main-color);
 }
 /* End styling testimonial section */
+/* ------------------------------------------ */
+
+/* Start styling blog section */
+.blog {
+  text-align: center;
+  margin: 0 auto 60px auto;
+  padding: 60px 0;
+  background-color: var(--secondary-bg-color);
+  color: var(--black);
+}
+.blog .blog-cards {
+  padding: 24px 0;
+}
+.blog .blog-cards .card {
+  background-color: var(--white);
+  text-align: start;
+  width: 30%;
+  display: inline-block;
+  margin-inline: 1.4%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.blog .blog-cards .card-img {
+  width: 100%;
+}
+.blog .blog-cards .card-img img {
+  width: 100%;
+}
+.blog .blog-cards .card-img iframe {
+  width: 100%;
+  height: 192px;
+}
+.blog .blog-cards .card-text {
+  padding: 0 16px 40px 16px;
+}
+.blog .blog-cards .card-text h2 {
+  font-weight: 600;
+}
+.blog .blog-cards .card-text > p {
+  color: var(--secondary-color);
+}
+.blog .blog-cards .card-text p:last-of-type {
+  color: var(--secondary-color);
+  font-size: 14px;
+}
+.blog .blog-cards .card-text a {
+  color: var(--black);
+}
+.blog .blog-cards .card-text a:hover {
+  color: var(--main-color);
+}
+.blog .blog-cards .card-text a i {
+}
+/* End styling blog section */
+/* ------------------------------------------ */
+
+/* Start Styling contact section */
+.contact {
+  text-align: center;
+}
+.contact .form-container {
+  padding: 40px 0;
+  margin: auto;
+  width: 60%;
+}
+.contact form {
+  text-align: start;
+}
+form .form-row {
+  margin-bottom: 30px;
+}
+.contact form input {
+  min-height: 40px;
+  color: var(--secondary-color);
+  border-radius: 4px;
+  border: 1px solid var(--secondary-color);
+  padding: 8px 14px;
+  box-shadow: inset 0px 0px 3px 1px rgb(243, 243, 243);
+}
+.contact form input:focus {
+  border: 1px solid var(--main-color);
+  outline: 1px solid var(--main-color);
+  box-shadow: none;
+  color: var(--black);
+}
+
+form .form-name {
+  float: left;
+  width: 46%;
+}
+form .form-email {
+  float: right;
+  width: 46%;
+}
+form .form-subject {
+  width: 100%;
+}
+form .form-message {
+  min-height: 40px;
+  border-radius: 4px;
+  border: 1px solid var(--secondary-color);
+  padding: 8px 14px;
+  box-shadow: inset 0px 0px 3px 1px rgb(243, 243, 243);
+  width: 100%;
+  color: var(--secondary-color);
+}
+.contact .form-message:focus {
+  border: 1px solid var(--main-color);
+  outline: 1px solid var(--main-color);
+  box-shadow: none;
+  color: var(--black);
+}
+.form-submit {
+  background-color: var(--main-color);
+  box-shadow: none;
+  text-transform: uppercase;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--white);
+}
+/* End of Styling contact section */
+/* ------------------------------------------ */
+
+/* Start Styling footer section */
+.footer {
+  padding: 48px 0 60px 0;
+  color: var(--white);
+  background-color: var(--black);
+  text-align: center;
+  margin: auto;
+}
+.footer .social {
+  margin-bottom: 14px;
+}
+.footer .social a {
+  color: var(--white);
+  margin-inline: 8px;
+}
+.footer .social a:hover {
+  color: var(--main-color);
+}
+.footer .copy-right {
+  font-size: 14px;
+}
+.footer .copy-right a {
+  color: var(--main-color);
+}
+/* End of Styling footer section */
 /* ------------------------------------------ */
