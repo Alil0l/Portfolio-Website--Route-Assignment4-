@@ -175,7 +175,8 @@ header nav li a:hover,
 
 /* Start about section style */
 .about {
-  margin: 100px auto;
+  margin: 40px auto;
+  padding: 100px 0;
 }
 .about-img-container {
   position: relative;
@@ -304,15 +305,15 @@ header nav li a:hover,
 /* LINES BELOW HEADERS */
 .lines {
   position: relative;
-  margin: 30px auto;
+  margin: 15px auto;
   width: 160px;
-  height: 2px;
+  height: 1px;
   background-color: var(--main-color);
 }
 .lines::before {
   content: "";
   position: absolute;
-  top: -10px;
+  top: -5px;
   left: 30px;
   width: 100px;
   height: 1px;
@@ -321,7 +322,7 @@ header nav li a:hover,
 .lines::after {
   content: "";
   position: absolute;
-  top: 10px;
+  top: 5px;
   left: 30px;
   width: 100px;
   height: 1px;
@@ -332,7 +333,9 @@ header nav li a:hover,
 /* Start styling services section */
 .services {
   text-align: center;
-  margin: 100px auto;
+  margin: 0 auto;
+  padding: 60px 0;
+  background-color: var(--secondary-bg-color);
 }
 .services h2 {
   font-size: 40px;
@@ -353,16 +356,14 @@ header nav li a:hover,
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.285);
 }
 .services .items .item:hover i {
-  position: relative;
-  font-size: 30px;
+  transform: scale(1.2);
 }
 .services .items .item i {
-  position: relative;
   font-size: 24px;
   color: var(--main-color);
   margin: 24px;
 }
-.services .items .item h3 {
+.sec-title {
   font-size: 24px;
   color: var(--black);
   font-weight: 600;
@@ -374,4 +375,167 @@ header nav li a:hover,
   /* font-weight: 300; */
 }
 /* End styling services section */
+/* ------------------------------------------ */
+
+/* Start styling the portfolio section */
+.portfolio {
+  text-align: center;
+  padding: 60px 0;
+}
+.port-options {
+  margin: 20px auto;
+}
+.port-options button {
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 8px;
+  margin-inline: 18px;
+  color: var(--black);
+  font-weight: 500;
+  border: none;
+  background-color: transparent;
+}
+.port-options button:hover {
+  color: var(--main-color);
+  cursor: pointer;
+}
+.portfolio .cards {
+  width: 100%;
+}
+.portfolio .cards-row {
+  padding-inline: 12px;
+}
+.portfolio .cards-row .card {
+  display: inline-block;
+  position: relative;
+  width: 30%;
+  margin-bottom: 12px;
+  margin-inline: 5px;
+}
+.portfolio .cards-row .card:hover .port-overlay {
+  z-index: 1;
+  opacity: 1;
+  cursor: pointer;
+}
+.portfolio .cards-row .card a > img {
+  width: 100%;
+}
+.portfolio .cards-row .card .port-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(0, 0%, 20%, 0.6);
+  z-index: -1;
+  opacity: 0;
+}
+.portfolio .cards-row .card .port-overlay i {
+  font-size: 16px;
+  position: absolute;
+  bottom: 18px;
+  right: 12px;
+  color: var(--main-color);
+}
+
+/* End styling the portfolio section */
+/* ------------------------------------------ */
+
+/* start styling counters section- */
+.counters-section {
+  text-align: center;
+  padding: 80px 0;
+  margin: 0 auto 50px auto;
+  background-color: var(--secondary-bg-color);
+  color: var(--black);
+}
+.counters-box {
+  width: 100%;
+}
+.counters-box .counter-card {
+  width: 16%;
+  display: inline-block;
+  margin-inline: 4%;
+}
+.counter-card .counter {
+  font-size: 30px;
+  margin-bottom: 18px;
+}
+.counter-card i {
+  color: var(--main-color);
+  font-size: 24px;
+  margin-bottom: 18px;
+}
+.counter-card h4 {
+  font-weight: 600;
+}
+/* End styling counters section- */
+/* ------------------------------------------ */
+
+/* start styling testimonial section */
+.testimonial {
+  text-align: center;
+  margin: 0 auto 50px auto;
+  padding: 40px 0;
+}
+.testimonial .testimonial-card {
+  margin: 40px auto 0 auto;
+  width: 60%;
+  background: rgb(255, 48, 91);
+  background: linear-gradient(
+    135deg,
+    #ff305b 0%,
+    #ff305b 20%,
+    rgba(241, 241, 241, 1) 20%
+  );
+  padding: 50px;
+}
+.testimonial-card-img {
+  float: left;
+  width: 15%;
+  margin-right: 5%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.testimonial-card-img img {
+  width: 100%;
+  transform: scale(1.1);
+}
+.testimonial-card-text {
+  float: right;
+  width: 80%;
+  text-align: start;
+}
+.testimonial-card-text h2 {
+  color: var(--black);
+  font-size: 32px;
+}
+.testimonial-card-text h5 {
+  color: var(--secondary-color);
+}
+.testimonial-card-text p {
+  color: var(--secondary-color);
+}
+.testimonial-card-text .rate {
+  font-size: 16px;
+  color: #f1c30d;
+}
+.testimonial .scroll-circle button {
+  border: 1px solid var(--main-color);
+  cursor: pointer;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  margin-inline: 2px;
+}
+.testimonial .scroll-circle .active-btn {
+  border: 1px solid var(--main-color);
+  cursor: pointer;
+  border-radius: 15px;
+  width: 30px;
+  height: 10px;
+  background-color: var(--main-color);
+}
+/* End styling testimonial section */
 /* ------------------------------------------ */
