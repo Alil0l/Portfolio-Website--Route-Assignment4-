@@ -438,6 +438,28 @@ header nav li a:hover,
   right: 12px;
   color: var(--main-color);
 }
+/* POPUP DISPLAY STYLEING */
+.openpopup {
+  position: fixed;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsla(0, 0%, 13%, 0.78);
+  top: 0;
+  left: 0;
+  transition: 0s;
+}
+.openpopup img {
+  transition: 0s;
+}
+.hidden {
+  visibility: hidden;
+}
+
+/* POPUP DISPLAY STYLEING */
 
 /* End styling the portfolio section */
 /* ------------------------------------------ */

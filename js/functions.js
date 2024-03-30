@@ -12,3 +12,22 @@ navItems.forEach(function (e) {
   });
 });
 //////////////////////////////////////////////
+
+// Opening & Closing popup when pressed
+const showPopup = function () {
+  openPopup.classList.remove("hidden");
+};
+
+openPopup.addEventListener("click", function (e) {
+  if (!e.target.classList.contains("is-open")) {
+    openPopup.classList.add("hidden");
+  }
+});
+
+imgPopup.forEach(function (e) {
+  e.addEventListener("click", function (e) {
+    e.stopPropagation();
+    showPopup();
+  });
+});
+//////////////////////////////////////////////
