@@ -592,8 +592,7 @@ header nav li a:hover,
 .blog .blog-cards .card-text a:hover {
   color: var(--main-color);
 }
-.blog .blog-cards .card-text a i {
-}
+
 /* End styling blog section */
 /* ------------------------------------------ */
 
