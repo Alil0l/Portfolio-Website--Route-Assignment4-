@@ -31,3 +31,31 @@ imgPopup.forEach(function (e) {
   });
 });
 //////////////////////////////////////////////
+
+// Typing switch change effect
+let counter = 0;
+const switchFunc = function () {
+  if (counter % 2 == 0) {
+    switchTextSpan.textContent = "Developer";
+  } else {
+    switchTextSpan.textContent = "Designer";
+  }
+  counter++;
+};
+const textAni = function () {
+  let word = switchTextSpan.textContent;
+  let i = 1;
+  function ani() {
+    if (i <= word.length) {
+      switchTextSpan.textContent = word.slice(0, -i);
+      i++;
+    }
+  }
+  setInterval(() => {
+    ani();
+  }, 100);
+};
+setInterval(() => {
+  switchFunc();
+  textAni();
+}, 2000);

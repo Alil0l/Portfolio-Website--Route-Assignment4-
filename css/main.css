@@ -169,10 +169,13 @@ header nav li a:hover,
 }
 .landing .text-cont h4 span::after {
   content: "";
-  height: 30px;
+  height: 100%;
+  width: 100%;
   border-left: 3px solid white;
   position: absolute;
-  left: 120px;
+  /* background-color: white; */
+  left: 110%;
+  top: 0;
 }
 
 /* end of landing style */
@@ -451,9 +454,12 @@ header nav li a:hover,
   top: 0;
   left: 0;
   transition: 0s;
+  cursor: zoom-out;
 }
 .openpopup img {
   transition: 0s;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.285);
+  cursor: initial;
 }
 .hidden {
   visibility: hidden;
