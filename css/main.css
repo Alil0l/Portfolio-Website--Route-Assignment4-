@@ -196,6 +196,7 @@ header nav li a:hover,
   margin-left: 80px;
   transform: translate(24px, 24px);
   width: 35%;
+  height: 100%;
 }
 .about .about-img {
   position: relative;
