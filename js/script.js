@@ -3,7 +3,7 @@ const navItems = document.querySelectorAll(".nav-item");
 const imgPopup = document.querySelectorAll(".img-popup");
 const openPopup = document.querySelector(".openpopup");
 const isOpen = document.querySelector(".is-open");
-let textToggle = document.querySelector(".switch-text");
+// let textToggle = document.querySelector(".switch-text");
 let counters = document.querySelectorAll(".counter");
 let interval = 2000;
 /////////////////////////////////////
@@ -41,38 +41,38 @@ imgPopup.forEach(function (e) {
 });
 //////////////////////////////////////////////
 
-// Typing switch change effect
-let word = "Developer";
-const switchText = function () {
-  let i = 1;
-  function loopAdd() {
-    if (i <= word.length) {
-      textToggle.textContent = word.slice(0, i);
-      i++;
-    }
-  }
-  setInterval(() => {
-    loopAdd();
-  }, 100);
-};
-const switchTextBack = function () {
-  let i = 1;
-  function loopReduce() {
-    if (i <= word.length) {
-      textToggle.textContent = word.slice(0, -i);
-      i++;
-    }
-  }
-  setInterval(() => {
-    loopReduce();
-  }, 100);
-};
-setInterval(() => {
-  switchText();
-  setTimeout(() => {
-    switchTextBack();
-  }, 2000);
-}, 3000);
+// // Typing switch change effect
+// let word = "Developer";
+// const switchText = function () {
+//   let i = 1;
+//   function loopAdd() {
+//     if (i <= word.length) {
+//       textToggle.textContent = word.slice(0, i);
+//       i++;
+//     }
+//   }
+//   setInterval(() => {
+//     loopAdd();
+//   }, 100);
+// };
+// const switchTextBack = function () {
+//   let i = 1;
+//   function loopReduce() {
+//     if (i <= word.length) {
+//       textToggle.textContent = word.slice(0, -i);
+//       i++;
+//     }
+//   }
+//   setInterval(() => {
+//     loopReduce();
+//   }, 100);
+// };
+// setInterval(() => {
+//   switchText();
+//   setTimeout(() => {
+//     switchTextBack();
+//   }, 2000);
+// }, 3000);
 
 ///////////////////////////////////
 // Counters animation
