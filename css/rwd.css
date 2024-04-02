@@ -1,0 +1,373 @@
+/* For a responsive website */
+
+/* Large */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1199px;
+    width: 90%;
+    padding: 0;
+  }
+  .sec-title {
+    font-size: 60px;
+  }
+  .about {
+    margin: 30px auto;
+    padding: 80px 0;
+  }
+  .about-text ul li a {
+    font-size: 14px;
+  }
+
+  .about-text ul span + a {
+    font-size: 14px;
+    color: var(--secondary-color);
+    font-weight: 600;
+  }
+
+  .testimonial .testimonial-card {
+    width: 70%;
+    padding: 24px;
+  }
+}
+/* Medium */
+@media (max-width: 992px) {
+  .container {
+    max-width: 991px;
+    width: 90%;
+    padding: 0;
+  }
+  .sec-title {
+    font-size: 50px;
+  }
+
+  header nav ul {
+    display: initial;
+  }
+
+  .about {
+    margin: 20px auto;
+    padding: 60px 0;
+  }
+  .landing .text-cont h3 {
+    font-size: 24px;
+  }
+  .landing .text-cont h1 {
+    font-size: 70px;
+  }
+  .landing .text-cont h4 {
+    font-size: 26px;
+  }
+  .about-text ul li a {
+    font-size: 8px;
+  }
+
+  .about-img-container {
+    float: none;
+    margin: auto;
+    transform: none;
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  .about .about-img-container::before {
+    border: none;
+  }
+  .about .about-text {
+    margin: auto;
+    float: none;
+    width: 80%;
+  }
+  .about-text h2 {
+    margin-bottom: 6px;
+  }
+  .about-text p {
+    margin-bottom: 14px;
+    padding-bottom: 14px;
+  }
+  .about-text ul {
+    margin: 8px 0;
+  }
+  .about-text ul span + a {
+    font-size: 14px;
+    color: var(--secondary-color);
+    font-weight: 600;
+  }
+
+  .services {
+    padding: 40px 0;
+  }
+  .services .items {
+    margin: auto;
+    padding: 20px 0;
+  }
+  .services .items .item {
+    float: left;
+    width: 50%;
+    border-radius: 2px;
+    padding: 20px 0;
+  }
+  .portfolio {
+    padding: 40px 0;
+  }
+  .port-options button {
+    font-size: 18px;
+    padding: 4px;
+    margin-inline: 8px;
+    font-weight: 500;
+  }
+  .portfolio .cards-row .card {
+    width: 45%;
+  }
+  .counters-box .counter-card {
+    width: 45%;
+    display: inline-block;
+    margin-inline: 2%;
+    margin-bottom: 36px;
+  }
+  .testimonial {
+    padding: 30px 0;
+  }
+  .testimonial .testimonial-card {
+    width: 90%;
+    padding: 24px;
+  }
+  .testimonial-card-img {
+    width: 20%;
+    float: none;
+    margin: 24px auto;
+  }
+  .testimonial-card-text {
+    float: none;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  .blog {
+    padding: 30px 0;
+  }
+  .blog .blog-cards .card {
+    text-align: start;
+    width: 90%;
+    margin: 24px auto;
+  }
+  .contact .form-container {
+    padding: 20px 0;
+    width: 80%;
+  }
+  form .form-row {
+    margin-bottom: 18px;
+  }
+  form .form-name {
+    float: none;
+    width: 100%;
+    margin-bottom: 18px;
+  }
+  form .form-email {
+    float: none;
+    width: 100%;
+  }
+  .form-submit {
+    background-color: var(--main-color);
+    padding: 10px 16px;
+    font-size: 14px;
+    width: 100%;
+  }
+}
+/* Small */
+@media (max-width: 768px) {
+  .container {
+    max-width: 767px;
+    width: 90%;
+    padding: 0;
+  }
+  .sec-title {
+    font-size: 30px;
+  }
+
+  header nav ul {
+    display: none;
+  }
+  .toggle-menu {
+    display: initial;
+  }
+  .toggle-menu:hover + ul,
+  .toggle-menu + ul:hover {
+    position: absolute;
+    z-index: 9999;
+    padding: 24px 0;
+    min-width: 150px;
+    top: 40px;
+    right: 20px;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .landing .text-cont h3 {
+    font-size: 16px;
+  }
+  .landing .text-cont h1 {
+    font-size: 40px;
+  }
+  .landing .text-cont h4 {
+    font-size: 18px;
+  }
+  @keyframes rigthToLeft {
+    0% {
+      content: "Developer";
+      width: 100px;
+    }
+    25% {
+      content: "Developer";
+      width: 100px;
+    }
+    40% {
+      width: 0;
+    }
+    60% {
+      width: 0;
+    }
+    75% {
+      content: "Designer";
+      width: 80px;
+    }
+    100% {
+      content: "Designer";
+      width: 80px;
+    }
+  }
+  .about-text ul li a {
+    font-size: 8px;
+  }
+  .about {
+    margin: 20px auto;
+    padding: 40px 0;
+  }
+  .about-img-container {
+    float: none;
+    margin: auto;
+    transform: none;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .about .about-img-container::before {
+    border: none;
+  }
+  .about .about-text {
+    margin: auto;
+    float: none;
+    width: 100%;
+  }
+  .about-text ul li {
+    width: 100%;
+    text-align: start;
+  }
+  .about-text h2 {
+    margin-bottom: 6px;
+  }
+  .about-text p {
+    border-bottom: 1px dashed var(--secondary-color);
+    margin-bottom: 14px;
+    padding-bottom: 14px;
+  }
+  .about-text ul {
+    margin: 8px 0;
+  }
+  .about-text .right-li {
+    float: none;
+    text-align: start;
+  }
+  .about-text .left-li {
+    float: none;
+  }
+  .about-text .btn {
+    margin: auto;
+    text-align: center;
+  }
+  .about-text ul span + a {
+    font-size: 14px;
+    color: var(--secondary-color);
+    font-weight: 600;
+  }
+
+  .services {
+    padding: 30px 0;
+  }
+  .services .items {
+    margin: auto;
+    padding: 20px 0;
+  }
+  .services .items .item {
+    float: left;
+    width: 100%;
+    border-radius: 2px;
+    padding: 20px 0;
+  }
+  .portfolio {
+    padding: 30px 0;
+  }
+  .port-options button {
+    font-size: 12px;
+    padding: 4px;
+    margin-inline: 8px;
+    font-weight: 500;
+  }
+  .portfolio .cards-row .card {
+    width: 90%;
+  }
+  .counters-box .counter-card {
+    width: 45%;
+    display: inline-block;
+    margin-inline: 2%;
+    margin-bottom: 36px;
+  }
+  .testimonial {
+    padding: 20px 0;
+  }
+  .testimonial .testimonial-card {
+    width: 90%;
+    padding: 24px;
+  }
+  .testimonial-card-img {
+    width: 35%;
+    float: none;
+    margin: 24px auto;
+  }
+  .testimonial-card-text {
+    float: none;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  .blog {
+    padding: 30px 0;
+  }
+  .blog .blog-cards .card {
+    text-align: start;
+    width: 90%;
+    margin: 24px auto;
+  }
+  .contact .form-container {
+    padding: 20px 0;
+    width: 80%;
+  }
+  form .form-row {
+    margin-bottom: 18px;
+  }
+  form .form-name {
+    float: none;
+    width: 100%;
+    margin-bottom: 18px;
+  }
+  form .form-email {
+    float: none;
+    width: 100%;
+  }
+  .form-submit {
+    background-color: var(--main-color);
+    padding: 10px 16px;
+    font-size: 14px;
+    width: 100%;
+  }
+}
+
+/* end of responsive  */
