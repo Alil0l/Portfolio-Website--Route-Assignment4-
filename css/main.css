@@ -57,13 +57,15 @@ a {
 
 /* Start styling header */
 /* Nav bar style */
-header {
-  width: 100%;
-  position: fixed;
-  z-index: 500;
-}
+
 .toggle-menu {
   display: none;
+}
+.navbar.hide {
+  transform: translateY(-100%);
+}
+.navbar.atTop {
+  background-color: transparent;
 }
 header .logo {
   color: var(--main-color);
@@ -78,7 +80,8 @@ header nav {
   left: 0;
   top: 0;
   z-index: 500;
-  background-color: var(--black);
+  background-color: #333;
+  transition: 0.5s ease;
 }
 header nav ul {
   padding: 6px 0;
