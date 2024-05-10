@@ -5,8 +5,7 @@
 
 </center>
 
-
-![image](https://github.com/Alil0l/Portfolio-Website--Route-Assignment4-/assets/137832626/a147319a-f3ae-4a73-9ba6-269e8a6ffca8)
+<a href="https://alil0l.github.io/Portfolio-Website--Route-Assignment4-/" target="_blank">![image](https://github.com/Alil0l/Portfolio-Website--Route-Assignment4-/assets/137832626/a147319a-f3ae-4a73-9ba6-269e8a6ffca8)</a>
 
  <center>
 
